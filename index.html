@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- ============================================
+         META TAGS — Information about your page
+         (Not visible to users, but important for
+         browsers, Google, and social media)
+    ============================================ -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio of [Your Name] — a passionate developer building modern web experiences." />
+    <meta name="author" content="[YOUR Name]" />
+
+    <!-- Page title (shows in browser tab) -->
+    <title>[Your Name] | Portfolio</title>
+
+    <!-- ============================================
+         FAVICON — The small icon in the browser tab
+    ============================================ -->
+    <link rel="icon" type="image/png" href="assets/icons/favicon.png" />
+
+    <!-- ============================================
+         TAILWIND CSS — Our styling framework
+         Loaded from the internet (CDN), no install needed
+    ============================================ -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- ============================================
+         TAILWIND CONFIG — Custom colors and fonts
+         for our portfolio theme
+    ============================================ -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#6C63FF",      /* Purple — main accent color */
+              secondary: "#F3F4F6",    /* Light gray — background */
+              dark: "#0F0F0F",         /* Near black — main background */
+              card: "#1A1A2E",         /* Dark blue-black — card background */
+              accent: "#00D4FF",       /* Cyan — secondary accent */
+            },
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              mono: ["Fira Code", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- ============================================
+         GOOGLE FONTS — Professional typography
+    ============================================ -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ============================================
+         FONT AWESOME — Icons (star, email, github etc)
+    ============================================ -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- ============================================
+         YOUR CUSTOM STYLES — Loaded after Tailwind
+         so your styles take priority
+    ============================================ -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/animations.css" />
+  </head>
+
+  <body class="bg-dark text-white font-sans">
+
+    <!-- ============================================
+         PAGE LOADER
+         Shows a loading animation before the
+         page fully appears — looks professional
+    ============================================ -->
+    <div id="loader" class="fixed inset-0 bg-dark flex items-center justify-center z-50">
+      <div class="text-center">
+        <div class="w-16 h-16 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto mb-4"></div>
+        <p class="text-primary font-mono text-sm">Loading...</p>
+      </div>
+    </div>
+
+    <!-- ============================================
+         MAIN WRAPPER
+         Everything visible on the page goes here
+    ============================================ -->
+    <div id="app" class="opacity-0 transition-opacity duration-500">
+
+      <!-- NAVBAR — Top navigation bar -->
+      <div id="navbar-container"></div>
+
+      <!-- MAIN CONTENT — All sections -->
+      <main>
+
+        <!-- HERO — First thing visitors see -->
+        <div id="hero-container"></div>
+
+        <!-- ABOUT — Who you are -->
+        <div id="about-container"></div>
+
+        <!-- SKILLS — What you know -->
+        <div id="skills-container"></div>
+
+        <!-- PROJECTS — What you've built -->
+        <div id="projects-container"></div>
+
+        <!-- CONTACT — How to reach you -->
+        <div id="contact-container"></div>
+
+      </main>
+
+      <!-- FOOTER — Bottom of the page -->
+      <div id="footer-container"></div>
+
+    </div><!-- end #app -->
+
+    <!-- ============================================
+         JAVASCRIPT FILES
+         Loaded at the BOTTOM of body on purpose —
+         ensures HTML loads before JS runs
+    ============================================ -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+
+  </body>
+</html>

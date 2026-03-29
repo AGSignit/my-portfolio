@@ -1,0 +1,130 @@
+<!-- ============================================
+     HERO COMPONENT — Anant Gopal Srivastava
+============================================ -->
+<section id="hero" class="min-h-screen flex items-center relative overflow-hidden">
+
+  <!-- Animated background dots -->
+  <div class="hero-bg-dots"></div>
+
+  <!-- Floating gradient blobs -->
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- Main content -->
+  <div class="max-w-6xl mx-auto px-6 w-full">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+
+      <!-- LEFT — Text -->
+      <div class="flex-1 text-center md:text-left">
+
+        <!-- Greeting tag -->
+        <div class="hero-tag fade-up" style="animation-delay: 0.1s;">
+          <span class="text-primary font-mono text-sm">
+            &lt; Hello World! /&gt;
+          </span>
+        </div>
+
+        <!-- Name -->
+        <h1 class="text-5xl md:text-7xl font-extrabold mt-4 mb-2 fade-up"
+            style="animation-delay: 0.2s;">
+          I'm <span class="gradient-text">Anant</span>
+        </h1>
+
+        <!-- Animated title -->
+        <div class="flex items-center gap-3 justify-center md:justify-start mb-6 fade-up"
+             style="animation-delay: 0.3s;">
+          <span class="text-gray-400 text-xl md:text-2xl font-light">I'm a</span>
+          <span id="typed-text"
+                class="text-xl md:text-2xl font-semibold text-accent"></span>
+          <span class="typed-cursor text-accent text-2xl">|</span>
+        </div>
+
+        <!-- Bio -->
+        <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0 leading-relaxed mb-8 fade-up"
+           style="animation-delay: 0.4s;">
+          Detail-oriented BBA student specializing in
+          <span class="text-primary font-medium">AI &amp; Data Science</span>.
+          Passionate about data analysis, financial modeling,
+          and building intelligent solutions.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-wrap gap-4 justify-center md:justify-start fade-up"
+             style="animation-delay: 0.5s;">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-rocket mr-2"></i>View My Work
+          </a>
+          <a href="#contact" class="btn-outline">
+            <i class="fas fa-envelope mr-2"></i>Hire Me
+          </a>
+        </div>
+
+        <!-- Social Links -->
+        <div class="flex gap-5 justify-center md:justify-start mt-8 fade-up"
+             style="animation-delay: 0.6s;">
+          <a href="https://linkedin.com/in/anant-g-srivastava-39b20a272"
+             target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com" target="_blank"
+             class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:anantgopalsrivastava@gmail.com"
+             class="social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+
+      </div><!-- end left -->
+
+      <!-- RIGHT — Profile Image -->
+      <div class="flex-shrink-0 fade-up" style="animation-delay: 0.3s;">
+        <div class="hero-image-wrapper">
+
+          <!-- Rotating ring -->
+          <div class="hero-ring"></div>
+
+          <!-- Profile picture -->
+          <div class="hero-image">
+            <img
+              src="assets/images/profile.jpg"
+              alt="Anant Gopal Srivastava"
+              onerror="this.style.display='none';
+                       this.nextElementSibling.style.display='flex';"
+            />
+            <!-- Fallback avatar -->
+            <div class="hero-image-fallback" style="display:none;">
+              <span class="text-6xl font-bold gradient-text">AG</span>
+            </div>
+          </div>
+
+          <!-- Badge 1 — top right -->
+          <div class="hero-badge hero-badge-tr">
+            <i class="fas fa-chart-line text-primary mr-2"></i>
+            <span>Business Analyst</span>
+          </div>
+
+          <!-- Badge 2 — bottom left -->
+          <div class="hero-badge hero-badge-bl">
+            <i class="fas fa-brain text-accent mr-2"></i>
+            <span>AI Enthusiast</span>
+          </div>
+
+        </div>
+      </div><!-- end right -->
+
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col
+                items-center gap-2 scroll-indicator fade-up"
+         style="animation-delay: 1s;">
+      <span class="text-gray-500 text-xs font-mono">scroll down</span>
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+    </div>
+
+  </div>
+</section>

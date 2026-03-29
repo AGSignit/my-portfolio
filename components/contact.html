@@ -1,0 +1,197 @@
+<!-- ============================================
+     CONTACT COMPONENT — With Formspree
+============================================ -->
+<section id="contact" class="py-24 relative">
+
+  <div class="contact-bg-accent"></div>
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- SECTION HEADER -->
+    <div class="text-center mb-16 reveal">
+      <p class="text-primary font-mono text-sm mb-2">Let us connect</p>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+      <div class="section-divider"></div>
+      <p class="text-gray-400 max-w-xl mx-auto mt-4">
+        Whether you have an opportunity, a project, or just want
+        to say hello — my inbox is always open!
+      </p>
+    </div>
+
+    <!-- MAIN GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+
+      <!-- LEFT — Contact Info -->
+      <div class="reveal">
+
+        <h3 class="text-2xl font-bold mb-2">
+          Let's <span class="gradient-text">Talk</span>
+        </h3>
+        <p class="text-gray-400 mb-8 leading-relaxed">
+          I'm currently open to internships, freelance projects,
+          and full-time opportunities. If you have a question or
+          proposal, feel free to reach out!
+        </p>
+
+        <!-- Contact detail cards -->
+        <div class="flex flex-col gap-4 mb-10">
+
+          <a href="mailto:anantgopalsrivastava@gmail.com"
+             class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <p class="contact-info-label">Email</p>
+              <p class="contact-info-value">anantgopalsrivastava@gmail.com</p>
+            </div>
+          </a>
+
+          <a href="tel:+918303981821" class="contact-info-card">
+            <div class="contact-info-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div>
+              <p class="contact-info-label">Phone</p>
+              <p class="contact-info-value">+91 8303981821</p>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/anant-g-srivastava-39b20a272"
+             target="_blank" class="contact-info-card">
+            <div class="contact-info-icon linkedin-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div>
+              <p class="contact-info-label">LinkedIn</p>
+              <p class="contact-info-value">anant-g-srivastava</p>
+            </div>
+          </a>
+
+          <div class="contact-info-card">
+            <div class="contact-info-icon location-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <p class="contact-info-label">Location</p>
+              <p class="contact-info-value">Bangalore, India</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Social links -->
+        <div>
+          <p class="text-gray-500 text-sm mb-4 font-mono">// find me on</p>
+          <div class="flex gap-4">
+            <a href="https://linkedin.com/in/anant-g-srivastava-39b20a272"
+               target="_blank" class="social-icon-lg">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com"
+               target="_blank" class="social-icon-lg">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:anantgopalsrivastava@gmail.com"
+               class="social-icon-lg">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+      </div><!-- end left -->
+
+      <!-- RIGHT — Formspree Form -->
+      <div class="reveal">
+        <div class="contact-form-card">
+
+          <h3 class="text-xl font-bold mb-6">
+            Send a <span class="gradient-text">Message</span>
+          </h3>
+
+          <!-- ✅ FORMSPREE FORM -->
+          <!-- Replace YOUR_FORM_ID with your actual Formspree ID -->
+          <form
+            id="contact-form"
+           action="https://formspree.io/f/xlgojnro"
+            method="POST"
+          >
+
+            <!-- Name -->
+            <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-user mr-2 text-primary"></i>Your Name
+              </label>
+              <input
+                type="text"
+                name="name"
+                class="form-input"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-envelope mr-2 text-primary"></i>Your Email
+              </label>
+              <input
+                type="email"
+                name="email"
+                class="form-input"
+                placeholder="john@example.com"
+                required
+              />
+            </div>
+
+            <!-- Subject -->
+            <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-tag mr-2 text-primary"></i>Subject
+              </label>
+              <input
+                type="text"
+                name="subject"
+                class="form-input"
+                placeholder="Job Opportunity / Collaboration"
+                required
+              />
+            </div>
+
+            <!-- Message -->
+            <div class="form-group">
+              <label class="form-label">
+                <i class="fas fa-comment mr-2 text-primary"></i>Message
+              </label>
+              <textarea
+                name="message"
+                class="form-input form-textarea"
+                placeholder="Hi Anant, I would like to discuss..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <!-- Submit button -->
+            <button
+              type="submit"
+              id="form-submit"
+              class="btn-primary w-full text-center
+                     justify-center flex items-center gap-2"
+            >
+              <i class="fas fa-paper-plane"></i>
+              <span id="btn-text">Send Message</span>
+            </button>
+
+            <!-- Feedback message -->
+            <div id="form-feedback" class="form-feedback hidden"></div>
+
+          </form>
+
+        </div>
+      </div><!-- end right -->
+
+    </div>
+  </div>
+</section>
