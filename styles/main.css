@@ -1080,3 +1080,49 @@ section {
 .max-w-6xl {
   width: 100%;
 }
+/* ============================================
+   CLICKABLE CERTIFICATE CARDS
+============================================ */
+.cert-clickable {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.cert-clickable::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg,
+    rgba(108,99,255,0.05), rgba(0,212,255,0.05));
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 14px;
+}
+.cert-clickable:hover::before {
+  opacity: 1;
+}
+.cert-clickable:hover {
+  border-color: rgba(108,99,255,0.5) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(108,99,255,0.2);
+}
+
+/* View badge — top right of card */
+.cert-view-btn {
+  display: flex;
+  align-items: center;
+  background: rgba(108,99,255,0.15);
+  border: 1px solid rgba(108,99,255,0.3);
+  color: #6C63FF;
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+.cert-clickable:hover .cert-view-btn {
+  background: #6C63FF;
+  color: #ffffff;
+}
